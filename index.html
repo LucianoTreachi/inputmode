@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inputmode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <h1 class="main-title">
+          Inputmode
+        </h1>
+
+        <p class="paragraph">
+          Si tienes un campo numérico en un formulario web, por ejemplo: número de tarjeta, DNI, CBU, CUIL, CVC, código
+          postal, etc., agrega el atributo inputmode. Este atributo le indica al navegador qué tipo de teclado mostrar
+          en dispositivos móviles.
+        </p>
+
+        <h1 class="second-title">
+          Ejemplos
+        </h1>
+
+        <div class="grid">
+
+          <!-- Example 1 -->
+          <div>
+            <label for="card-text" class="label">Número de tarjeta</label>
+            <small class="small-text">(Sin inputmode)</small>
+            <input type="text" class="input" id="card-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="icon"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#fbebea" />
+              <path fill="#cd352c"
+                d="M15.78 8.22a.75.75 0 0 0-1.06 0L12 10.94 9.28 8.22a.75.75 0 0 0-1.06 1.06L10.94 12l-2.72 2.72a.75.75 0 1 0 1.06 1.06L12 13.06l2.72 2.72a.75.75 0 0 0 1.06-1.06L13.06 12l2.72-2.72a.75.75 0 0 0 0-1.06z" />
+            </svg>
+          </div>
+          <div>
+            <label for="card-numeric" class="label">Número de tarjeta</label>
+            <small class="small-text">(Con inputmode numeric)</small>
+            <input type="text" inputmode="numeric" class="input" id="card-numeric">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="icon"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#e7f3ef" />
+              <path fill="#12906a"
+                d="M10.28 15.22a.75.75 0 0 1-1.06 0l-2.72-2.72a.75.75 0 0 1 1.06-1.06L10 13.44l6.44-6.44a.75.75 0 0 1 1.06 1.06z" />
+            </svg>
+          </div>
+
+          <!-- Example 2 -->
+          <div>
+            <label for="dni-text" class="label">DNI</label>
+            <small class="small-text">(Sin inputmode)</small>
+            <input type="text" class="input" id="dni-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="icon"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#fbebea" />
+              <path fill="#cd352c"
+                d="M15.78 8.22a.75.75 0 0 0-1.06 0L12 10.94 9.28 8.22a.75.75 0 0 0-1.06 1.06L10.94 12l-2.72 2.72a.75.75 0 1 0 1.06 1.06L12 13.06l2.72 2.72a.75.75 0 0 0 1.06-1.06L13.06 12l2.72-2.72a.75.75 0 0 0 0-1.06z" />
+            </svg>
+          </div>
+          <div>
+            <label for="dni-numeric" class="label">DNI</label>
+            <small class="small-text">(Con inputmode numeric)</small>
+            <input type="text" inputmode="numeric" class="input" id="dni-numeric">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="icon"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#e7f3ef" />
+              <path fill="#12906a"
+                d="M10.28 15.22a.75.75 0 0 1-1.06 0l-2.72-2.72a.75.75 0 0 1 1.06-1.06L10 13.44l6.44-6.44a.75.75 0 0 1 1.06 1.06z" />
+            </svg>
+          </div>
+
+          <!-- Example 3 -->
+          <div>
+            <label for="price-text" class="label">Precio</label>
+            <small class="small-text">(Sin inputmode)</small>
+            <input type="text" class="input" id="price-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="icon"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#fbebea" />
+              <path fill="#cd352c"
+                d="M15.78 8.22a.75.75 0 0 0-1.06 0L12 10.94 9.28 8.22a.75.75 0 0 0-1.06 1.06L10.94 12l-2.72 2.72a.75.75 0 1 0 1.06 1.06L12 13.06l2.72 2.72a.75.75 0 0 0 1.06-1.06L13.06 12l2.72-2.72a.75.75 0 0 0 0-1.06z" />
+            </svg>
+          </div>
+          <div>
+            <label for="price-decimal" class="label">Precio</label>
+            <small class="small-text">(Con inputmode decimal)</small>
+            <input type="text" inputmode="decimal" class="input" id="price-decimal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="icon"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#e7f3ef" />
+              <path fill="#12906a"
+                d="M10.28 15.22a.75.75 0 0 1-1.06 0l-2.72-2.72a.75.75 0 0 1 1.06-1.06L10 13.44l6.44-6.44a.75.75 0 0 1 1.06 1.06z" />
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
